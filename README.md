@@ -81,6 +81,19 @@ The connector secures the transport between Clio and Claude. It does NOT change 
 
 If you are deploying this connector at a firm, pair it with Claude Enterprise (or API + ZDR). If you are an individual lawyer testing it on personal or non-privileged data, Claude Pro is reasonable for the testing phase but should not become the long-term setup for client work.
 
+### Access vs retention — the distinction most evaluations miss
+
+A common assumption is that logging equals compliance: if there is a record of what was accessed, the firm is covered. That conflates two separate things, and the gap between them is where privileged content gets exposed.
+
+- **Retention** is what happens to the data *after* the request — whether it persists in training sets, vendor logs, or any system once the answer is returned.
+- **Access** is whether the model saw the matter content *at all* — even ephemerally, in-flight, only to produce its answer.
+
+For privileged matter content, **access is the exposure.** The moment privileged content enters a conversation, the model has processed it, whether or not anything is retained afterward. No-retention and no-training guarantees constrain what happens to the data later; they do not undo the fact that it was seen, and the firm's audit log records only that access happened — not that it was permissible.
+
+This is why tier choice is not optional for privileged work. **Zero-data-retention on Claude Enterprise is the only clean answer for anything touching privileged matter content** — it is the configuration where the content is processed under contractual no-training, no-retention terms rather than consumer ones. If the matter is privileged and you are not on Enterprise ZDR (or a local model — see below), assume the content has been exposed under terms your firm has not vetted.
+
+The connector's own no-retention posture (it stores nothing but your encrypted token) covers the transport layer only. It says nothing about what the model tier does with content once that content enters the conversation. That second question is the one this section answers, and it is the one your firm has to answer before privileged data ever reaches Claude.
+
 ### Supply-chain trust (npm package)
 
 The connector ships as `@oktopeak/clio-mcp` on npm. Like every npm package, the published version can be updated at any time by the maintainer. Standard hygiene applies:
