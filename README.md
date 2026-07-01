@@ -513,11 +513,11 @@ Want to talk first? → [Book a 30-min scoping call](https://calendly.com/office
 
 ## Related projects
 
-If your firm uses **Filevine** instead of (or alongside) Clio, we ship the same kind of connector for it:
+We ship the same kind of connector for other practice management platforms:
 
-- **[Filevine MCP](https://github.com/oktopeak/filevine-mcp)** — open-source MCP connector for Filevine practice management. 17 tools across cases, contacts, notes, documents, tasks, and Collection sections. Same architecture, same audit logging, same encryption at rest. MIT licensed.
-- npm: [`@oktopeak/filevine-mcp`](https://www.npmjs.com/package/@oktopeak/filevine-mcp)
-- MCP Registry: `io.github.oktopeak/filevine-mcp`
+- **[MyCase MCP](https://github.com/oktopeak/mycase-mcp)** — open-source MCP connector for MyCase legal practice management. Same architecture, same audit logging, same encryption at rest. MIT licensed. npm: [`@oktopeak/mycase-mcp`](https://www.npmjs.com/package/@oktopeak/mycase-mcp)
+- **[Filevine MCP](https://github.com/oktopeak/filevine-mcp)** — open-source MCP connector for Filevine practice management. 17 tools across cases, contacts, notes, documents, tasks, and Collection sections. Same architecture, same audit logging, same encryption at rest. MIT licensed. npm: [`@oktopeak/filevine-mcp`](https://www.npmjs.com/package/@oktopeak/filevine-mcp)
+- **[IntakeQ / PracticeQ MCP](https://github.com/oktopeak/IntakeQ)** — HIPAA-aware MCP connector for IntakeQ/PracticeQ (healthcare / behavioral & allied-health clinics). Audit logging on every PHI read/write, BAA + Zero-Data-Retention guidance. MIT licensed. npm: [`@oktopeak/intakeq-mcp`](https://www.npmjs.com/package/@oktopeak/intakeq-mcp)
 
 ---
 
