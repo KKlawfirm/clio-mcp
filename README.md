@@ -524,6 +524,15 @@ We ship the same kind of connector for other practice management platforms:
 
 ---
 
+## Supporting this project
+
+This connector is free, MIT licensed, and maintained by [Oktopeak](https://oktopeak.com). It always will be — we don't take donations. If it saved you time, the things that actually help:
+
+- **Star this repo.** It is genuinely how other firms find it.
+- **Tell another firm** running Clio.
+- **[Leave a review](https://clutch.co/profile/oktopeak)** if we helped you directly.
+- Need it deployed, extended, or maintained for your firm? **[Commercial support](https://oktopeak.com/clio-mcp/)** — that is what funds the free work.
+
 ## Who we are
 
 **[Oktopeak](https://oktopeak.com/?utm_source=github&utm_medium=readme&utm_campaign=clio-mcp&utm_content=who-we-are) — digital transformation for law firms and healthcare.**
