@@ -220,8 +220,8 @@ pwd
 
 ### Step 2 — Create a Clio API application
 
-1. Log in to Clio and go to **Settings → Developer Applications**
-2. Click **Add Application**
+1. Go to **[developers.clio.com](https://developers.clio.com)** and sign in with your Clio login
+2. Click **Developer Apps → Add**
 3. Give it a name (e.g., *Claude Connector*)
 4. Set the redirect URI to exactly: `http://127.0.0.1:5678/callback`
 5. Save the application
