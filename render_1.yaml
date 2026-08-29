@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: kk-clio
+    runtime: node
+    plan: 0.5c-512mb
+    region: frankfurt
+    autoDeploy: false
+    healthCheckPath: /health
+    buildCommand: npm ci && npm run build
+    startCommand: MCP_BASE_URL="$RENDER_EXTERNAL_URL" node build/index.js
+    disk:
+      name: data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: TRANSPORT
+        value: http
+      - key: CLIO_REGION
+        value: eu
+      - key: HOME
+        value: /var/data
+      - key: MCP_API_KEY
+        sync: false
+      - key: ENCRYPTION_KEY
+        sync: false
+      - key: CLIO_CLIENT_ID
+        sync: false
+      - key: CLIO_CLIENT_SECRET
+        sync: false
